@@ -3,6 +3,9 @@
   --color-secondary: #e8e8e8;
   --color-light-gray: #bbbfca;
   --color-dark-gray: #495464; 
+
+  --signin-button--color: rgba(0, 98, 246, 0.808);
+  --login-button-color: ;
 }
 
 *,
