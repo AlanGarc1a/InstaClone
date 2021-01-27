@@ -21,6 +21,10 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
+app.get('/feed', (req, res) => {
+    res.render('feed');
+});
+
 app.listen(3000, (req, res) => {
     console.log("Listening on PORT 3000");
 });

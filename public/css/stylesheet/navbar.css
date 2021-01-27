@@ -1,0 +1,75 @@
+.nav {
+    height: 5.5rem;
+    border-bottom: 1px solid var(--color-light-gray);
+    background-color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seacrh__input {
+    margin: 1.2rem 1rem;
+    padding: .6rem 1.4rem;
+    margin-right: 5rem;
+    border-radius: 3px;
+    border-color: var(--color-dark-gray);
+    background-color: var(--color-secondary);
+}
+
+.search__button {
+    border: none;
+    background-color: var(--color-secondary);
+}
+
+.search__icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.nav-link__title:link,
+.nav-link__title:visited {
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link__logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-box {
+    margin-top: .5rem;
+}
+
+.logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.list {
+    display: flex;
+
+    margin-top: .7rem;
+    margin-bottom: 1.2rem;
+}
+
+.list__item {
+    list-style-type: none;
+    margin: .5rem 1.2rem;
+    cursor: pointer;
+}
+
+.list__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.feed-body {
+    background-color: rgb(218, 218, 218);
+}
