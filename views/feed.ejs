@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<% layout('./layouts/boilerplate') -%>
 
-        <link rel="stylesheet" href="/css/stylesheet/style.css">
-        <link rel="stylesheet" href="/css/stylesheet/navbar.css">
-        <link rel="stylesheet" href="/css/stylesheet/post.css">
-    </head>
-    <body class="feed-body">
-        <%- include('./partials/navbar'); %>
-        <main>
-            <div class="container">
-                <%- include('./partials/post'); %>
-            </div>
-        </main>
-    </body>
-</html>
+<div class="feed-body">
+    <%- include('./partials/navbar'); %>
+    <main>
+        <div class="container">
+            <%- include('./partials/post'); %>
+        </div>
+    </main>
+</div>

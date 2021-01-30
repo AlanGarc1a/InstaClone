@@ -1,50 +1,36 @@
-<!DOCTYE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
+<% layout('./layouts/boilerplate') -%>
 
-        <link rel="stylesheet" href="/css/stylesheet/style.css">
-        <link rel="stylesheet" href="/css/stylesheet/signup.css">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-        <title>InstaClone</title>
-    </head>
-    <body class="signup-body">
-        <main>
-            <div class="card">
-                <h1 class="card__title">InstaClone</h1>
-                <div class="card__desc">
-                    <p>Sign up to see photos and videos from your friends.</p>
-                </div>
-                <div class="card__form">
-                    <form action="#" class="form">
-                        <div class="form__group">
-                            <label for="email">&nbsp</label>
-                            <input id="email" type="email" name="email" placeholder="Email" class="form__input">
-                        </div>
-    
-                        <div class="form__group">
-                            <label for="username">&nbsp</label>
-                            <input id="username" type="text" name="username" placeholder="Username" class="form__input">
-                        </div>
-    
-                        <div class="form__group">
-                            <label for="password">&nbsp</label>
-                            <input id="password" type="password" name="password" placeholder="Password" class="form__input">
-                        </div>
-                        <button class="btn--signin">Sign up</button>
-                    </form>
-                </div>
-                <p class="card__desc card__desc--bottom">
-                    By signing up, you agree to our Terms, Data Policy, and Cookies Policy
-                </p>
+<main class="signup-body">
+    <div class="card">
+        <h1 class="card__title">InstaClone</h1>
+            <div class="card__desc">
+                <p>Sign up to see photos and videos from your friends.</p>
             </div>
-            <div class="card card--login">
-                <p>Have an account? <a href="/login" class="card__link"> Log in</a></p>
+            <div class="card__form">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label for="email">&nbsp</label>
+                        <input id="email" type="email" name="email" placeholder="Email" class="form__input">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="username">&nbsp</label>
+                        <input id="username" type="text" name="username" placeholder="Username" class="form__input">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="password">&nbsp</label>
+                        <input id="password" type="password" name="password" placeholder="Password" class="form__input">
+                    </div>
+                    <button class="btn--signin">Sign up</button>
+                </form>
             </div>
-        </main>
-    </body>
-</html>
+            <p class="card__desc card__desc--bottom">
+                By signing up, you agree to our Terms, Data Policy, and Cookies Policy
+            </p>
+    </div>
+
+    <div class="card card--login">
+        <p>Have an account? <a href="/login" class="card__link"> Log in</a></p>
+    </div>
+</main>
