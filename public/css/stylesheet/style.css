@@ -30,82 +30,28 @@ body {
 }
 
 /* 
-  HOME STYLES
+  ///////////////////////////////////
+  UTILS
+  ////////////////////////////////
 */
 
-.header {
-  height: 100vh;
-  background-image: url('../../img/home-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.link {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.3rem;
 }
 
-.home-container {
-display: flex;
-justify-content: center;
-}
-
-.home-box {
-text-align: center;
-
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-.home-box__title {
-font-size: 3.4rem;
-letter-spacing: .5rem;
-color: var(--color-secondary);
-margin-bottom: 2rem;
-}
-
-.home-box__description {
-font-size: 2.4rem;
-color: var(--color-secondary);
-margin-bottom: 5rem;
-}
-
-.btn,
-.btn:visited {
-display: inline-block;
-padding: 1.5rem 5.5rem;
-border: 2px solid var(--color-secondary);
-border-radius: 1.5rem;
-font-size: 1.6rem;
-margin-right: 4rem;
-text-decoration: none;
-color: var(--color-secondary);
-
-}
-
-.btn:hover {
-transform: translateY(-2px);
-box-shadow: 0rem 0.8rem 0.8rem rgba(0, 0, 0, 0.8);
-transition: all .2s;
-}
-
-.btn:active {
-transform: translateY(2px);
-box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.8);
-transition: all .2s;
-}
-
-/* 
-  LOGIN STYLES
-*/
-
-.login-body {
-
+.center-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-
   background-color: var(--color-primary);
 }
+
+/* 
+  LOGIN AND SIGNIN STYLES
+*/
 
 .card {
   border-radius: 2px;
@@ -138,10 +84,6 @@ transition: all .2s;
   margin-bottom: 1.2rem
 }
 
-/* 
-  SIGNIN
-*/
-
 .card__title {
   font-size: 3.6rem;
   margin-top: 4rem;
@@ -158,14 +100,6 @@ transition: all .2s;
   margin-bottom: 3rem;
 }
 
-.form__input {
-  font-size: 1.5rem;
-  width: 89%;
-  padding: .8rem;
-  border-radius: 3px;
-  background-color: var(--color-primary);
-}
-
 .card--bottom {
   font-size: 1.4rem;
   padding: 1.5rem 1.5rem;
@@ -180,7 +114,7 @@ transition: all .2s;
 .btn--signin {
   font-size: 1.4rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-white);
   border-radius: 4px;
   background-color: var(--signin-button--color);
   padding: .5rem 14rem;
@@ -220,7 +154,7 @@ transition: all .2s;
 
 .logo {
   display: inline-block;
-   padding: .4rem;
+  padding: .4rem;
 }
 
 .nav-link:link,
@@ -252,10 +186,6 @@ transition: all .2s;
 
 .item {
   margin-right: 2rem;
-}
-
-.feed-body {
-  background-color: rgb(241, 239, 239);
 }
 
 /* 
@@ -407,10 +337,6 @@ transition: all .2s;
   PROFILE
 */
 
-/* .profile-body {
-  background-color: var(--color-gray);
-} */
-
 .profile {
   display: flex;
   justify-content: center;
@@ -513,4 +439,57 @@ transition: all .2s;
   object-fit: cover;
   margin-bottom: 2rem;
   border-radius: 4px;
+}
+
+/* 
+  PROFILE DROPDOWN
+*/
+
+.profile-dropdown {
+  border: 3px solid var(--color-secondary);
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  margin-top: 1.3rem;
+  position: relative;
+  visibility: hidden;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dropdown-list::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid var(--color-light-gray);
+  top: -1rem;
+  left: -.13rem;
+  z-index: -1;
+}
+
+.dropdown-list-link {
+  display: inline-block;
+  padding-left: .5rem;
+  padding-right: 6rem;
+  padding-bottom: .8rem;
+  margin-top: .7rem;
+  margin-bottom: .5rem;
+}
+
+.dropdown-list-link:hover {
+  background-color: var(--color-gray);
+}
+
+.icon-box {
+  display: inline-block;
+  margin-right: .5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
