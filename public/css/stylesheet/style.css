@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #f4f4f2;
-  --color-secondary: #e8e8e8;
+  --color-primary: rgb(238, 238, 238);
+  --color-secondary: rgb(250, 250, 250);
   --color-gray: #eeebeb;
   --color-light-gray: #bbbfca;
   --color-dark-gray: #495464; 
@@ -27,6 +27,7 @@ body {
   box-sizing: border-box;
   font-weight: 400;
   line-height: 1.7; 
+  background-color: var(--color-primary);
 }
 
 /* 
@@ -45,14 +46,96 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  background-color: var(--color-primary);
+  height: 100vh;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.mr-y {
+  margin-right: 2rem;
+}
+
+.ml-y {
+  margin-left: 3rem;
+}
+
+.mr-y-big {
+  margin-right: 3rem;
+}
+
+.mt-x {
+  margin-top: 1.5rem;
+}
+
+.mt-big {
+  margin-top: 10rem;
+}
+
+.pr-y {
+  padding-right: 2rem;
+}
+
+.pl-y {
+  padding-left: 2rem;
+}
+
+.pt-x {
+  padding-top: 3rem;
+}
+
+.pb-x {
+  padding-bottom: 3rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+} 
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.follow-text-button {
+  border: none;
+  color: var(--signin-button--color);
+  cursor: pointer;
 }
 
 /* 
   LOGIN AND SIGNIN STYLES
 */
-
 .card {
   border-radius: 2px;
   border: 1px solid var(--color-light-gray);
@@ -62,26 +145,7 @@ body {
   margin-bottom: 1.5rem;
   background-color: var(--color-white);
   padding-bottom: 2rem;
-}
-
-.form__group:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.form__input {
-  width: 89%;
-  padding: .9rem .8rem;
-  background-color: var(--color-primary);
-  border-radius: 6px;
-}
-
-.form__or {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--color-dark-gray);
-  margin-top: 1.6rem;
-  margin-bottom: 1.2rem
+  color: var(--color-black);
 }
 
 .card__title {
@@ -93,6 +157,26 @@ body {
 .card__sub {
   font-size: 1.7rem;
   font-weight: 600;
+}
+
+.form__input {
+  width: 89%;
+  padding: .9rem .8rem;
+  background-color: var(--color-primary);
+  border-radius: 6px;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.form__or {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-dark-gray);
+  margin-top: 1.6rem;
+  margin-bottom: 1.2rem
 }
 
 .card__form {
@@ -126,12 +210,10 @@ body {
 */
 
 .nav {
-  display: flex;
   justify-content: space-evenly;
-
   height: 5.5rem;
+  background-color: var(--color-white);
   border-bottom: 1px solid var(--color-light-gray);
-  background-color: white;
   width: 100%;
   position: fixed;
   top: 0;
@@ -143,10 +225,6 @@ body {
   width: 45%;
 }
 
-.nav-company {
-  display: flex;
-}
-
 .nav-company__item {
   margin: .7rem .3rem;
   align-self: flex-start;
@@ -155,6 +233,7 @@ body {
 .logo {
   display: inline-block;
   padding: .4rem;
+  color: var(--color-black);
 }
 
 .nav-link:link,
@@ -191,151 +270,106 @@ body {
 /* 
   CARD POST
 */
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.card-post {
-  border: 1px solid var(--color-light-gray);
+.instacard {
   border-radius: 3px;
+  border: 2px solid var(--color-light-gray);
+  font-weight: bold;
   width: 100%;
   max-width: 60rem;
-  margin: auto;
-  margin-top: 10rem;
+  margin-right: 3rem;
   margin-bottom: 5rem;
 }
 
-.card-header {
-  padding: 2rem;
-  height: 7rem;
-  background-color: var(--color-white);
+.insta-header {
+ background-color: var(--color-white);
+ padding: 2rem;
+ height: 8rem;
 }
 
-.card-user-image {
+.insta-header-profile__img {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   vertical-align: middle;
 }
 
-.card-username {
+.insta-header-username {
   margin-left: 2rem;
-  font-weight: bold;
-  font-size: 1.2rem;
 }
 
-.card-time {
+.insta-header-time {
   float: right;
   width: 8rem;
   padding-top: 1rem;
   text-align: right;
-  color: #999;
-}
-
-.card-image__img {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.card-content {
-  padding-left: 1.2rem;
-  background-color: var(--color-white);
-}
-
-.card-content__user-name:link,
-.card-content__user-name:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-right: 1.2rem;
-  margin-top: 1.2rem;
-  margin-bottom: 1.1rem;
   color: var(--color-black);
 }
 
-.card-content__description {
-  font-size: 1.2rem;
-  margin-right: 1rem;
+.instacard_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.card-content__likes:link,
-.card-content__likes:visited {
-
-  display: inline-block;
-  margin-top: 1.5rem;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: var(--color-black);
+.instacard-content {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
-.card-content-link__comments:link,
-.card-content-link__comments:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin-bottom: 1.1rem;
-  color: var(--color-light-gray);
+.instacard hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 3rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.card-content-username:link,
-.card-content-username:visited {
+.instacard-likes {
   font-size: 1.4rem;
-  font-size: 700;
-  text-decoration: none;
-  color: var(--color-black);
+  margin-top: .4rem;
 }
 
-.card-content-username__comment {
-  font-size: 1.3rem;
-  padding-bottom: 1.1rem;
+.instacard-user {
+  font-size: 1.2rem;
+  margin-top: .6rem;
+  margin-bottom: .8rem;
 }
 
-.card-post-hr {
-  width: 95%;
-  margin: 0 auto;
-  color: var(--color-secondary);
+.instacard-comment {
+  color: var(--color-dark-gray);
 }
 
-.card-footer {
+.content-description {
+  font-size: 1.2rem;
+  margin-bottom: .57em;
+}
+
+.instacard-footer {
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--color-white);
 }
 
-.comment-form {
-  display: flex;
-}
-
-.comment-form__group {
-  width: 100%;
-  margin-right: 3rem;
-}
-
-.comment-form__input[type=text] {
+.footer__input{
+  outline: none;
   border: none;
-  border-bottom: 1px solid var(--color-light-gray);
-  padding: 1rem 1rem;
+  margin-left: 1rem;
   width: 100%;
+  background-color: var(--color-gray);
 }
 
-.comment-btn {
-  border: none;
-  font-size: 1.3rem;
-  font-weight: 700;
+.footer__post {
   color: var(--signin-button--color);
-  padding: auto;
-  background-color: var(--color-white);
+  margin-left: .5rem;
 }
 
 /* 
   PROFILE
 */
+.profile-body {
+  margin-top: 7rem;
+}
 
 .profile {
   display: flex;
@@ -492,4 +526,18 @@ body {
   margin-right: .5rem;
   margin-left: 1rem;
   margin-top: 1rem;
+}
+
+/* 
+  FEED ASIDE
+*/
+.suggestions {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.account-container {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
