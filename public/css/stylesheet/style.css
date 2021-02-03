@@ -43,9 +43,6 @@ body {
 }
 
 .center-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
 }
 
@@ -478,7 +475,6 @@ body {
 /* 
   PROFILE DROPDOWN
 */
-
 .profile-dropdown {
   border: 3px solid var(--color-secondary);
   border-radius: 1rem;
@@ -526,18 +522,4 @@ body {
   margin-right: .5rem;
   margin-left: 1rem;
   margin-top: 1rem;
-}
-
-/* 
-  FEED ASIDE
-*/
-.suggestions {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-.account-container {
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
