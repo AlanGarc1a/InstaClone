@@ -1,36 +1,36 @@
 <% layout('./layouts/boilerplate') -%>
 
-<main class="center-content">
-    <div class="card">
-        <h1 class="card__title">InstaClone</h1>
-            <div class="card__sub">
-                <p>Sign up to see photos and videos from your friends.</p>
-            </div>
-            <div class="card__form">
-                <form action="#">
-                    <div class="form__group">
-                        <label for="email">&nbsp</label>
-                        <input id="email" type="email" name="email" placeholder="Email" class="form__input">
-                    </div>
+<main class="center-content d-flex justify-content-center flex-direction-column">
+        <div class="card">
+            <h1 class="card__title">InstaClone</h1>
+                <div class="card__sub">
+                    <p>Sign up to see photos and videos from your friends.</p>
+                </div>
+                <div class="card__form">
+                    <form action="#">
+                        <div class="form__group">
+                            <label for="email">&nbsp</label>
+                            <input id="email" type="email" name="email" placeholder="Email" class="form__input">
+                        </div>
+        
+                        <div class="form__group">
+                            <label for="username">&nbsp</label>
+                            <input id="username" type="text" name="username" placeholder="Username" class="form__input">
+                        </div>
+        
+                        <div class="form__group">
+                            <label for="password">&nbsp</label>
+                            <input id="password" type="password" name="password" placeholder="Password" class="form__input">
+                        </div>
+                        <button class="btn--signin">Sign up</button>
+                    </form>
+                </div>
+                <p class="card__sub">
+                    By signing up, you agree to our Terms, Data Policy, and Cookies Policy
+                </p>
+        </div>
     
-                    <div class="form__group">
-                        <label for="username">&nbsp</label>
-                        <input id="username" type="text" name="username" placeholder="Username" class="form__input">
-                    </div>
-    
-                    <div class="form__group">
-                        <label for="password">&nbsp</label>
-                        <input id="password" type="password" name="password" placeholder="Password" class="form__input">
-                    </div>
-                    <button class="btn--signin">Sign up</button>
-                </form>
-            </div>
-            <p class="card__sub">
-                By signing up, you agree to our Terms, Data Policy, and Cookies Policy
-            </p>
-    </div>
-
-    <div class="card card--bottom">
-        <p>Have an account? <a href="/login" class="card__link"> Log in</a></p>
-    </div>
+        <div class="card card--bottom">
+            <p>Have an account? <a href="/login" class="card__link"> Log in</a></p>
+        </div>
 </main>

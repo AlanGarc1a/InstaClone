@@ -11,10 +11,6 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.render('home');
-});
-
-app.get('/signup', (req, res) => {
     res.render('signup');
 });
 
