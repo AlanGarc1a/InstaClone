@@ -9,10 +9,15 @@ see how back-end technologies work.
 
 # Tech Stack
 
+## Frontend
 * HTML
 * CSS
+* Bootstrap
 * EJS
+
+## Backend
 * Express.js
 * MongoDB
 * Mongoose.js
 * Node.js
+* bycryptjs
