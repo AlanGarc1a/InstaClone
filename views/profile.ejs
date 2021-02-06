@@ -1,38 +1,64 @@
 <% layout('./layouts/boilerplate') -%>
+<%- include('./partials/navbar'); %>
 
-<div class="profile-body">
-    <%- include('./partials/navbar'); %>
-    <div class="profile">
-
-        <header class="profile-header">
-            <div class="profile-img">
-                <img src="https://images.unsplash.com/photo-1582696942413-f3a56de72060?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="profile-img" class="profile-img__img">
-            </div>
-            <section class="profile-me">
-                <div class="profile-me__user">
-                    <h2 class="profile-me-user">Username</h2>
+<div class="container">
+    <div class="mt-4">
+        <div class="container">
+            <header class="d-flex">
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1582696942413-f3a56de72060?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="profile-img" class="profile-img__img">
                 </div>
-                <a href="#" class="profile-me__edit">Edit Profile</a>
-                <ul class="profile-stats">
-                    <li class="profile-stats__item">11<span> posts</span></li>
-                    <li class="profile-stats__item">71<span> followers</span></li>
-                    <li class="profile-stats__item">127<span> following</span></li>
-                </ul>
-                <h1>Name</h1>
-                <br>
-                <p class="profile-about">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio eius aperiam illum quis consequatur 
-                    ducimus soluta, quos excepturi aspernatur tempore repudiandae? Facilis vero numquam recusandae 
-                    dignissimos veniam natus necessitatibus.
-                </p>
-            </section>
-        </header>
+                <section class="">
+                    <div class="d-flex mb-2">
+                        <h2 class="me-4">Username</h2>
+                        <a class="text-decoration-none btn btn-outline-secondary align-self-center" href="#">Edit Profile</a>
+                    </div>
+                    <ul class="d-flex mt-4 p-0">
+                        <li class="me-5 remove-bullets fw-bold">11<span> posts</span></li>
+                        <li class="me-5 remove-bullets fw-bold">71<span> followers</span></li>
+                        <li class="me-5 remove-bullets fw-bold">127<span> following</span></li>
+                    </ul>
+                    <h1 class="fs-4 mt-5">Name</h1>
+                    <br>
+                    <p class="w-75">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio eius aperiam illum quis consequatur 
+                        ducimus soluta, quos excepturi aspernatur tempore repudiandae? Facilis vero numquam recusandae 
+                        dignissimos veniam natus necessitatibus.
+                    </p>
+                </section>
+            </header>
+        </div>
     </div>
     <main>
-        <div class="gallery-container">
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1514989801080-431fefd6546e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80" alt="upload-photo" class="gallery-image">
+        <hr>
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col mb-3">
+                    <div class="w-100">
+                        <a href="#">
+                            <div class="">
+                                <img class="img-fluid" src="https://images.unsplash.com/photo-1612476464716-431a2751e006?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="w-100">
+                        <a href="#">
+                            <div class="">
+                                <img class="img-fluid" src="https://images.unsplash.com/photo-1612476464716-431a2751e006?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="w-100">
+                        <a href="#">
+                            <div class="">
+                                <img class="img-fluid" src="https://images.unsplash.com/photo-1612476464716-431a2751e006?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"> 
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
