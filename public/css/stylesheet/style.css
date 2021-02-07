@@ -29,3 +29,15 @@
   width: 8rem;
   height: 8rem;
 }
+
+.profile-img__img--feed {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile-img__img--suggestions {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
