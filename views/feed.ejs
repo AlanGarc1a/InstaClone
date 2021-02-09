@@ -1,57 +1,63 @@
 <% layout('./layouts/boilerplate') -%>
 
-<%- include('./partials/navbar'); %> 
-<main>
-    <section class="container d-flex">
-        <div class="mt-5 me-4">
-            <%- include('./partials/post'); %>
-        </div>
-        <div class="position-relative mt-5 u-margin-huge">
-            <div class="position-fixed">
-                <div class="d-flex">
-                    <div class="">
-                        <div class="me-4">
-                            <img class="profile-img__img--feed" src="https://images.unsplash.com/photo-1612409597879-4091da2042c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                        </div>
+    <%- include('./partials/navbar'); %>
+        <main>
+            <section class="container pt-5 px-0">
+                <div class="row row-cols-2">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <%- include('./partials/post'); %>
                     </div>
-                    <div class="align-self-center">
-                        <a href="#" class="text-decoration-none text-dark">
-                            Username
-                        </a>
-                    </div>
-                    <div class="align-self-center">
-                        <div class="ps-5">
-                            <a class="btn btn-link text-decoration-none" href="#">
-                                Sign Out
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <p class="text-muted fs-6">Suggestions For You</p>
-                </div>
-                <div class="ps-2">
-                    <div class="d-flex mb-4">
-                        <div class="">
-                            <div class="me-4">
-                                <img class="profile-img__img--suggestions" src="https://images.unsplash.com/photo-1612409597879-4091da2042c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="col-xl-6 d-none d-sm-none d-md-none d-lg-none d-xl-block">
+                        <div class="position-relative ms-4">
+                            <div class="position-fixed">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <div class="me-4">
+                                            <img class="profile-img__img--feed"
+                                                src="https://images.unsplash.com/photo-1612409597879-4091da2042c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                                        </div>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            Username
+                                        </a>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <div class="ps-5">
+                                            <a class="btn btn-link text-decoration-none" href="#">
+                                                Sign Out
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-muted fs-6">Suggestions For You</p>
+                                </div>
+                                <div class="ps-2">
+                                    <div class="d-flex mb-4">
+                                        <div class="">
+                                            <div class="me-4">
+                                                <img class="profile-img__img--suggestions"
+                                                    src="https://images.unsplash.com/photo-1612409597879-4091da2042c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                Username
+                                            </a>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <div class="ps-5">
+                                                <a class="text-decoration-none" href="#">
+                                                    Follow
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="align-self-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                Username
-                            </a>
-                        </div>
-                        <div class="align-self-center">
-                            <div class="ps-5">
-                                <a class="text-decoration-none" href="#">
-                                    Follow
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-</main>
+            </section>
+        </main>
