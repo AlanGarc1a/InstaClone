@@ -1,3 +1,12 @@
+body {
+  background-color: rgba(250, 250, 250, .8) !important;
+}
+
+.img-fluid:hover {
+  opacity: 0.6;
+  transition: ease-in .2s;
+}
+
 .card-header {
   background-color: var(--color-white);
   padding: 4rem;
@@ -31,6 +40,12 @@
 }
 
 .profile-img__img--feed {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile-img__img--edit {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
