@@ -1,28 +1,13 @@
 # InstaClone
 
-A clone of Instagram. The project is still in its early stages.
+A clone of Instagram's web UI using HTML5, CSS3, and Bootstrap 5.
 
 # Motivation
 
-I wanted to learn Full Stack technologies. I have been working on mostly front-end langauges and wanted to 
-see how back-end technologies work. 
+I wanted to learn new features of Bootstrap 5 and get some practice using my own CSS with it.
 
 # Tech Stack
 
-### Frontend
 * HTML
 * CSS
 * Bootstrap
-* EJS
-
-### Backend
-* Express.js
-* MongoDB
-* Mongoose.js
-* Node.js
-* bycryptjs
-
-# UML Diagram
-My attempt to design a UML. It could be updated in the future.
-
-![image](https://user-images.githubusercontent.com/32556354/107159321-1ff87000-6944-11eb-97eb-c9b97dcdff28.png)
