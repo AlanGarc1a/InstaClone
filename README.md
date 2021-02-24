@@ -13,3 +13,9 @@ I wanted to learn new features of Bootstrap 5 and get some practice using my own
 * CSS
 * Bootstrap
 * EJS
+
+# Images
+
+![image](https://user-images.githubusercontent.com/32556354/109081095-8e645e80-76b6-11eb-8c5d-09028b59f612.png)
+
+![image](https://user-images.githubusercontent.com/32556354/109081190-bc49a300-76b6-11eb-9779-2ba502fc9c93.png)
