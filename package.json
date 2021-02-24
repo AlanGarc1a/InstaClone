@@ -19,9 +19,7 @@
     "ejs": "^3.1.5",
     "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
-    "install": "^0.13.0",
-    "mongoose": "^5.11.13",
-    "node-sass": "^5.0.0"
+    "install": "^0.13.0"
   },
   "dependencies": {}
 }
